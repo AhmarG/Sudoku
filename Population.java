@@ -1,6 +1,9 @@
 import java.util.*;
 /**
+ * Population.java
+ * 
  * Used by a generic algorithm to manage its population
+ * 
  * @author Benjamin Clark, Ahmar Gordon, Drew Morton, Alice McRae
  * @version 1.0
  */
@@ -19,7 +22,6 @@ public class Population implements Iterable<PopMember>
 		{
 			population[i] = new PopMember(memberSize);
 		}
-
 	}
 
 	public int getSize()
