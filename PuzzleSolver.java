@@ -1,8 +1,12 @@
 import java.util.Scanner;
 import java.io.FileReader;
 /**
+ * PuzzleSolver.java
+ * 
+ * Implements genetic algorithm
+ * 
  * @author Ahmar Gordon, Ben Clark, Drew Morton, Alice McRae
- *
+ * @version 1.0
  */
 public class PuzzleSolver 
 {
