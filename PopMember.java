@@ -1,7 +1,10 @@
 /**
+ * PopMember.java
+ * 
+ * Individual board to be a member of the population
+ * 
  * @author Benjamin Clark, Ahmar Gordon, Drew Morton, Alice McRae
  * @version 1.0
- *
  */
 public class PopMember
 {
@@ -116,7 +119,6 @@ public class PopMember
             }
         }
         System.out.println("Score: " + score);
-
     }
 
     public static void main(String args[])
@@ -124,9 +126,7 @@ public class PopMember
         PopMember p = new PopMember(81);
         for (int i = 0; i < 81; i++)
         {
-
             p.setEntry(i, (int) (Math.random() * 9 + 1));
-
         }
 
         p.printEntries();
@@ -134,9 +134,5 @@ public class PopMember
         p.setScore(78);
         System.out.println("The score was " + p.getScore());
     }
-
-
-
-
-
+    
 }
