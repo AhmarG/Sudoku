@@ -1,5 +1,10 @@
 /**
+ * Menu.java
  * 
+ * GUI for sudoku board
+ * 
+ * @author Ahmar Gordon, Alice McRae, Benjamin Clark, Drew Morton
+ * @version 1.0
  */
 
 import java.awt.BorderLayout;
@@ -13,11 +18,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-/**
- * @author Ahmar Gordon, Ben Clark, Drew Morton, Alice McRae
- *
- */
-
 public class Menu implements ActionListener
 {
     public static final int TEXTBOXSIZE = 2;
@@ -27,7 +27,6 @@ public class Menu implements ActionListener
     
     PuzzleSolver p;
     
-
 
     /**
      * @param args
@@ -90,10 +89,8 @@ public class Menu implements ActionListener
      */
     public void updateClicked(JButton jbTemp)
     {
-        
         try
         {
-           
             if (jbTemp.getName().equals("calculateButton"))
             {
                 p.niceRead();
@@ -113,7 +110,6 @@ public class Menu implements ActionListener
     
     public void setNumbers(int[] numbers)
     {
-        
         for (int i = 0; i < jTFInputArray.length; i++)
         {
             if (numbers[i] == 0)
